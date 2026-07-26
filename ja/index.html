@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orthic Labs — AI支援開発のためのローカルファースト基盤</title>
+  <meta name="description" content="Orthic Labsは、永続コンテキスト、根拠に基づく承認、マルチエージェント連携、コードとドキュメントの整合性のためのローカル開発ツールを作ります。">
+  <meta name="robots" content="index,follow"><link rel="canonical" href="https://orthic-labs.github.io/ja/">
+  <link rel="alternate" hreflang="en" href="https://orthic-labs.github.io/"><link rel="alternate" hreflang="es" href="https://orthic-labs.github.io/es/"><link rel="alternate" hreflang="ja" href="https://orthic-labs.github.io/ja/"><link rel="alternate" hreflang="ko" href="https://orthic-labs.github.io/ko/"><link rel="alternate" hreflang="zh-Hans" href="https://orthic-labs.github.io/zh-hans/"><link rel="alternate" hreflang="x-default" href="https://orthic-labs.github.io/">
+  <meta property="og:title" content="Orthic Labs — AI支援開発のためのローカル基盤"><meta property="og:description" content="コンテキスト、根拠、連携、リポジトリの真実を扱う開発基盤。"><meta property="og:type" content="website"><meta property="og:url" content="https://orthic-labs.github.io/ja/"><link rel="stylesheet" href="/assets/site.css">
+</head>
+<body><main class="shell">
+  <header class="top"><a class="brand" href="/ja/">ORTHIC <i>LABS</i></a><nav class="locale" aria-label="言語"><a href="/">English</a><a href="/es/">Español</a><a aria-current="page" href="/ja/">日本語</a><a href="/ko/">한국어</a><a href="/zh-hans/">简体中文</a></nav></header>
+  <section class="hero"><p class="eyebrow">開発者インフラストラクチャ</p><h1>AI支援の仕事は、検証できる状態であるべきです。</h1><p class="lede">Orthic Labsは、コーディングエージェントを使うチームのためにローカルファーストのツールを開発します。永続するコンテキスト、根拠で裏付けた成果物、ライブな連携、コードと文書を含むリポジトリマップを提供します。</p><span class="proof">ローカルデータ · 明示的な根拠 · 持ち運べる記録</span></section>
+  <section class="section"><h2>エージェントの回答後も成立し続ける仕事のための、6つのツール。</h2><p>プロンプト集ではありません。AI支援開発の各工程を、セッションをまたいで確認可能・復旧可能・再利用可能にするシステムです。</p><div class="grid">
+    <article class="card"><h3>Membrane</h3><p>スコープ内の根拠を集め、鮮度と権威を評価し、予算に収め、コンテキストパケットと受領証を返す基盤です。採用・省略・古さ・利用不能の理由が分かります。MemRightは永続メモリをローカルSQLiteに保存します。</p><span class="tag">受領証のあるコンテキスト</span></article>
+    <article class="card"><h3>Tether</h3><p>エンジニアリング上の主張のための根拠台帳です。主張をソースハッシュ、検査、ポリシーに結び付け、必要な根拠がなければ承認しません。入力が変わると依存関係を認識した無効化が古い根拠を失効させます。</p><span class="tag">承認の前に根拠</span></article>
+    <article class="card"><h3>Roundtable</h3><p>実行中のCodexとClaudeを席の間で動かすローカルハブです。WALモードのSQLiteがメッセージ、承認、引き継ぎ、リース、配信、重複排除を記録し、セッションブリッジは認証情報と非公開コンテキストをハブの外に置きます。</p><a class="tag" href="https://github.com/Orthic-Labs/Roundtable">Roundtableを見る ↗</a></article>
+    <article class="card"><h3>Blueprint</h3><p>リポジトリのためのローカルSQLite根拠グラフです。シンボル、ファイル、テスト、設定、計画、ADRを結び、文書内の主張と現在のコードを照合します。何が正しいか、古いか、矛盾しているか、未確定かを見つけられます。</p><span class="tag">コードと文書の真実</span></article>
+    <article class="card"><h3>Adapt</h3><p>承認済みの修正を永続的な設定へ変える、レビューゲート付きの学習層です。継続ルールと単発の事実を分離し、監査受領証とロールバックを備え、受理した記録をMemRightのローカルSQLiteに保存します。</p><span class="tag">残る修正</span></article>
+    <article class="card"><h3>ClaudeCodeX</h3><p>契約中のデスクトップアプリと並べて、隔離した2つ目のClaudeまたはCodexセッションを実行します。メインセッションは変更されず、ローカルプロキシが別インスタンス用のモデルスロット、認証情報、プロファイル状態をルーティングします。</p><a class="tag" href="https://github.com/Orthic-Labs/claudecodeX">ClaudeCodeXを見る ↗</a></article>
+  </div></section>
+  <section class="section"><h2>魔法のように見せるためではなく、確認できるように作る。</h2><div class="principles"><div class="principle"><strong>ローカルファーストの状態</strong><span>SQLite、loopbackサービス、可搬な記録が運用データを仕事の近くに保ちます。</span></div><div class="principle"><strong>根拠には有効期限がある</strong><span>主張は正確なソース、検査、入力バージョンにつながったままです。</span></div><div class="principle"><strong>文書はデータである</strong><span>計画とADRは装飾ファイルではなく、検索可能な技術的根拠です。</span></div></div></section>
+  <section class="cta"><h2>Orthic Labsの公開活動をフォローする。</h2><a href="https://github.com/Orthic-Labs">GitHubへ ↗</a></section>
+</main><footer class="shell">Orthic Labs · AI支援開発のためのローカルファースト基盤</footer></body></html>

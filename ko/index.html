@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orthic Labs — AI 지원 개발을 위한 로컬 퍼스트 인프라</title>
+  <meta name="description" content="Orthic Labs는 지속 가능한 컨텍스트, 근거 기반 승인, 멀티 에이전트 협업, 코드와 문서의 사실성을 위한 로컬 개발 도구를 만듭니다.">
+  <meta name="robots" content="index,follow"><link rel="canonical" href="https://orthic-labs.github.io/ko/">
+  <link rel="alternate" hreflang="en" href="https://orthic-labs.github.io/"><link rel="alternate" hreflang="es" href="https://orthic-labs.github.io/es/"><link rel="alternate" hreflang="ja" href="https://orthic-labs.github.io/ja/"><link rel="alternate" hreflang="ko" href="https://orthic-labs.github.io/ko/"><link rel="alternate" hreflang="zh-Hans" href="https://orthic-labs.github.io/zh-hans/"><link rel="alternate" hreflang="x-default" href="https://orthic-labs.github.io/">
+  <meta property="og:title" content="Orthic Labs — AI 개발자를 위한 로컬 퍼스트 인프라"><meta property="og:description" content="컨텍스트, 근거, 협업, 리포지토리 사실성을 위한 개발 인프라."><meta property="og:type" content="website"><meta property="og:url" content="https://orthic-labs.github.io/ko/"><link rel="stylesheet" href="/assets/site.css">
+</head>
+<body><main class="shell">
+  <header class="top"><a class="brand" href="/ko/">ORTHIC <i>LABS</i></a><nav class="locale" aria-label="언어"><a href="/">English</a><a href="/es/">Español</a><a href="/ja/">日本語</a><a aria-current="page" href="/ko/">한국어</a><a href="/zh-hans/">简体中文</a></nav></header>
+  <section class="hero"><p class="eyebrow">개발자 인프라</p><h1>AI 지원 작업은 검증 가능해야 합니다.</h1><p class="lede">Orthic Labs는 코딩 에이전트를 쓰는 팀을 위한 로컬 퍼스트 도구를 만듭니다. 지속 가능한 컨텍스트, 근거로 뒷받침된 전달, 실시간 협업, 코드와 문서를 함께 담은 리포지토리 지도를 제공합니다.</p><span class="proof">로컬 데이터 · 명시적 근거 · 이식 가능한 기록</span></section>
+  <section class="section"><h2>에이전트의 답변 이후에도 견뎌야 하는 작업을 위한 여섯 가지 도구.</h2><p>프롬프트 묶음이 아닙니다. AI 지원 개발의 각 부분을 세션 사이에서도 확인 가능하고, 복구 가능하며, 다시 쓸 수 있게 만드는 시스템입니다.</p><div class="grid">
+    <article class="card"><h3>Membrane</h3><p>범위 안의 근거를 모으고 신선도와 권위를 평가해 하나의 예산에 맞춘 뒤, 컨텍스트 패킷과 영수증을 돌려주는 인프라입니다. 무엇이 채택·생략·오래됨·사용 불가였는지 알 수 있습니다. MemRight는 지속 메모리를 로컬 SQLite에 저장합니다.</p><span class="tag">영수증이 있는 컨텍스트</span></article>
+    <article class="card"><h3>Tether</h3><p>엔지니어링 주장용 근거 원장입니다. 주장을 소스 해시, 검사, 정책에 연결하고 필수 근거 없이는 승인을 허용하지 않습니다. 입력이 바뀌면 의존성 인식 무효화가 오래된 근거를 조용히 통과시키지 않습니다.</p><span class="tag">승인 전 근거</span></article>
+    <article class="card"><h3>Roundtable</h3><p>실행 중인 Codex와 Claude 작업을 좌석 사이에서 조율하는 로컬 허브입니다. WAL 모드 SQLite가 메시지, 승인, 인계, 리스, 전달, 중복 제거를 기록하며 세션 브리지는 자격 증명과 숨은 컨텍스트를 허브 밖에 둡니다.</p><a class="tag" href="https://github.com/Orthic-Labs/Roundtable">Roundtable 살펴보기 ↗</a></article>
+    <article class="card"><h3>Blueprint</h3><p>리포지토리용 로컬 SQLite 근거 그래프입니다. 심볼, 파일, 테스트, 설정, 계획, ADR을 연결하고 문서의 주장과 현재 코드를 비교합니다. 무엇이 사실인지, 오래됐는지, 모순인지, 아직 모르는지 찾을 수 있습니다.</p><span class="tag">코드와 문서의 사실성</span></article>
+    <article class="card"><h3>Adapt</h3><p>승인된 수정을 지속 선호도로 바꾸는 검토 게이트 학습 계층입니다. 지속 규칙과 일회성 사실을 구분하고, 감사 영수증과 롤백을 제공하며, 수락된 기록을 MemRight 로컬 SQLite에 저장합니다.</p><span class="tag">남는 수정</span></article>
+    <article class="card"><h3>ClaudeCodeX</h3><p>구독 중인 데스크톱 앱 옆에서 격리된 두 번째 Claude 또는 Codex 세션을 실행합니다. 기본 세션은 건드리지 않으며, 로컬 프록시가 두 번째 인스턴스의 모델 슬롯, 자격 증명, 프로필 상태를 분리해 라우팅합니다.</p><a class="tag" href="https://github.com/Orthic-Labs/claudecodeX">ClaudeCodeX 살펴보기 ↗</a></article>
+  </div></section>
+  <section class="section"><h2>마법처럼 보이게 하려는 것이 아니라, 확인 가능하게 만들기 위해 만들었습니다.</h2><div class="principles"><div class="principle"><strong>로컬 퍼스트 상태</strong><span>SQLite, loopback 서비스, 이식 가능한 기록이 운영 데이터를 작업 가까이에 둡니다.</span></div><div class="principle"><strong>근거에는 수명이 있습니다</strong><span>주장은 정확한 소스, 검사, 입력 버전에 계속 연결됩니다.</span></div><div class="principle"><strong>문서는 데이터입니다</strong><span>계획과 ADR은 장식 파일이 아니라 질의 가능한 기술 근거입니다.</span></div></div></section>
+  <section class="cta"><h2>Orthic Labs의 공개 작업을 팔로우하세요.</h2><a href="https://github.com/Orthic-Labs">GitHub 방문 ↗</a></section>
+</main><footer class="shell">Orthic Labs · AI 지원 개발을 위한 로컬 퍼스트 인프라</footer></body></html>
